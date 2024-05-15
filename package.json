@@ -1,6 +1,6 @@
 {
   "name": "stars",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,6 +12,15 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
+  "keywords": [
+    "vue3",
+    "vue-router",
+    "pinia",
+    "vite",
+    "typescript",
+    "eslint",
+    "prettier"
+  ],
   "dependencies": {
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
@@ -28,12 +37,17 @@
     "@vue/tsconfig": "^0.5.1",
     "element-plus": "^2.7.3",
     "eslint": "^8.57.0",
-    "eslint-plugin-vue": "^9.23.0",
+    "eslint-plugin-vue": "^9.26.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "npm-run-all2": "^6.1.2",
+    "nprogress": "^0.2.0",
     "prettier": "^3.2.5",
+    "sass": "^1.77.1",
     "typescript": "~5.4.0",
     "vite": "^5.2.8",
     "vite-plugin-vue-devtools": "^7.0.25",
-    "vue-tsc": "^2.0.11"
+    "vue-tsc": "^2.0.11",
+    "vxe-table": "^4.6.12"
   }
 }
