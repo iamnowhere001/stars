@@ -94,6 +94,10 @@ const isAllDone = computed({
         <p>No todos, yay!</p>
       </div>
     </section>
+    <section>
+      <el-radio-button label="哈哈"></el-radio-button>
+      <el-radio-button label="呵呵"></el-radio-button>
+    </section>
   </div>
 </template>
 
