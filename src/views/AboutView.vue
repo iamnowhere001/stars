@@ -74,17 +74,19 @@ const isAllDone = computed({
     <p>a todo list demo</p>
 
     <section>
-      <input v-model="todoMsg" placeholder="请输入" />
-      <button @click="add">添加</button>
-      <button @click="clearHasDone">清理</button>
+      <div class="flex-layout">
+        <el-input v-model="todoMsg" placeholder="请输入" class="mr-10" />
+        <el-button @click="add">添加</el-button>
+        <el-button @click="clearHasDone">清理</el-button>
+      </div>
 
       <div v-if="todos.length">
         <div v-for="(todo, index) in todos" :key="todo.msg">
           <input type="checkbox" v-model="todo.done" />
           <span :class="{ done: todo.done }">{{ todo.msg }}</span>
-          <span @click="deleteItem(index)">删除</span>
+          <span class="ml-10" @click="deleteItem(index)">删除</span>
         </div>
-        <div>
+        <div class="mt-10">
           <span>全选</span>
           <input type="checkbox" v-model="isAllDone" />
           <span>{{ hasDone }} / {{ todos.length }}</span>
@@ -93,10 +95,6 @@ const isAllDone = computed({
       <div v-else>
         <p>No todos, yay!</p>
       </div>
-    </section>
-    <section>
-      <el-radio-button label="哈哈"></el-radio-button>
-      <el-radio-button label="呵呵"></el-radio-button>
     </section>
   </div>
 </template>

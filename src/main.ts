@@ -10,6 +10,8 @@ import router from './router'
 
 // 导入重置样式
 import './style/reset.scss'
+// 导入全局样式
+import './style/index.scss'
 // 导入element-plus样式
 import 'element-plus/dist/index.css'
 
