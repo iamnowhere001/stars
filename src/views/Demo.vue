@@ -5,14 +5,20 @@ import { defineAsyncComponent } from 'vue'
 // 使用 defineAsyncComponent 定义异步组件
 const AsyncComponents = defineAsyncComponent(() => import('./AsyncComponent.vue'))
 
+let loadAsync = ref(false)
+
+
 let open = ref(false)
+
 </script>
 
 <template>
   <el-button @click="open = true">Open Modal</el-button>
 
+  <el-button @click="loadAsync = true">点击加载异步组件</el-button>
+
   <!-- 异步组件 实现有问题 -->
-  <Suspense>
+  <Suspense v-if="loadAsync">
     <template #default>
       <AsyncComponents />
     </template>

@@ -7,6 +7,7 @@ import ElementPlus from 'element-plus'
 
 import App from './App.vue'
 import router from './router'
+import './router/permission'
 
 // 导入重置样式
 import './style/reset.scss'
@@ -20,5 +21,6 @@ const app = createApp(App)
 app.use(ElementPlus)
 app.use(createPinia())
 app.use(router)
-
-app.mount('#app')
+router.isReady().then(() => {
+  app.mount('#app')
+})
