@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 // import HelloWorld from './components/HelloWorld.vue'
 // import { ElNotification } from 'element-plus'
 // 将 Element Plus 的语言设置为中文
@@ -16,7 +16,6 @@ import zhCn from 'element-plus/es/locale/lang/zh-cn'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/demo">Demo</RouterLink>
       </nav>
     </div>
   </header> -->

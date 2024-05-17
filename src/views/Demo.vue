@@ -7,9 +7,7 @@ const AsyncComponents = defineAsyncComponent(() => import('./AsyncComponent.vue'
 
 let loadAsync = ref(false)
 
-
 let open = ref(false)
-
 </script>
 
 <template>
